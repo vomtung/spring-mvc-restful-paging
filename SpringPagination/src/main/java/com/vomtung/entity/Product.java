@@ -102,10 +102,6 @@ public class Product {
 		this.price = price;
 	}
 
-	public void setTotalProduct(long totalProduct) {
-		this.totalProduct = totalProduct;
-	}
-
 	public static String serialize(Product product) {
     	JSONSerializer serialiser = new JSONSerializer();
         return serialiser.serialize(product);
