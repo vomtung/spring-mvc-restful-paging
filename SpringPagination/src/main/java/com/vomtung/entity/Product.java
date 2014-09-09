@@ -46,9 +46,6 @@ public class Product {
     @JoinColumn(name = "category_id",referencedColumnName = "id", nullable = false)
 	Category category;
 	
-	@Transient
-	long totalProduct=0;
-	
 	public Product() {
 		super();
 	}
@@ -103,13 +100,6 @@ public class Product {
 	}
 	public void setPrice(long price) {
 		this.price = price;
-	}
-
-    public long getTotalProduct() {
-    	if(this.totalProduct==0){
-    		
-    	}
-		return totalProduct;
 	}
 
 	public void setTotalProduct(long totalProduct) {
